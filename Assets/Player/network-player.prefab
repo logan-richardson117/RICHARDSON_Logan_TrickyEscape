@@ -297,8 +297,10 @@ GameObject:
   - component: {fileID: 2564025545472031572}
   - component: {fileID: 8810659664102844852}
   - component: {fileID: -5342045175319746826}
+  - component: {fileID: 6763562124516199991}
+  - component: {fileID: 3170038868319122099}
   m_Layer: 2
-  m_Name: XR Origin (XR Rig)
+  m_Name: network-player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,8 +447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 374656382
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  GlobalObjectIdHash: 360145863
+  InScenePlacedSourceGlobalObjectIdHash: 374656382
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0
@@ -470,6 +472,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3dcbe823779be43bf4346fc96f7c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6763562124516199991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136384075830879041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272765a8080b43c4e90813874a84360a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  root: {fileID: 2513422753305799392}
+  head: {fileID: 1717537856381143773}
+  lefthand: {fileID: 4958970444326918320}
+  righthand: {fileID: 7441921011476458695}
+  meshTODisable:
+  - {fileID: 4836607351396048035}
+--- !u!114 &3170038868319122099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136384075830879041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0010d59caddd3284fa41cc1624d04b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 1
+  AuthorityMode: 0
+  TickSyncChildren: 0
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1 &4391689248058706803
 GameObject:
   m_ObjectHideFlags: 0
